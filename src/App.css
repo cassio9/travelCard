@@ -1,0 +1,129 @@
+:root {
+  --back-head: #f55a5a;
+  margin: 0 auto;
+}
+
+.nav-container {
+  background-color: var(--back-head);
+  display: flex;
+  align-items: center;
+  height: 55px;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: -0.085em;
+  font-family: "Inter", sans-serif;
+ 
+}
+
+.title::before {
+  content: url(./assets/head-logo.png);
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: -30%;
+}
+
+.travelCard-container{
+  margin: 50px 0;
+}
+
+.travelCard-right-container{
+  max-height: 168px;
+  padding: 10px;
+}
+
+.TravelCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  border-bottom: 1px solid #F5F5F5;
+  padding: 18px;
+  margin: 18px auto;
+}
+
+.travel-img {
+  min-width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  margin-right: 19px;
+  
+}
+
+.travel-location > span {
+  letter-spacing: 0.17em;
+  text-decoration: none;
+  color: #2b283a;
+  margin-right: 12px;
+}
+
+.travel-location > span::before {
+  content: url(./assets/maps.png);
+  margin-right: 4px;
+  vertical-align: -15%;
+}
+
+.travel-location a{
+  color: #918e9b
+}
+
+.travel-location {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  color: #918e9b;
+}
+
+.travel-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2b283a;
+  margin: 7px 0;
+}
+
+.travel-duration {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  color: #2b283a;
+  margin: 7px 0 9px 0;
+}
+
+.travel-details {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #2b283a;
+  max-height: 90px;
+  overflow: scroll;
+}
+
+.travel-details:hover {
+  font-size: 14px;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 22px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
+}
+
+
